@@ -8,5 +8,5 @@ $username = "datmusic";
 $password = "datmusic";
 $dbname ="datprovip";
 $connect = mysqli_connect($server, $username, $password, $dbname);
-}
+
 ?>
