@@ -123,7 +123,7 @@ img.d-block {
 <div class="container">
  <div class="row">
  <?php 
-    $connect = mysqli_connect('localhost','root','','web_music');
+    include("connect.php");
     $id=$_GET["id"];
     $result = mysqli_query( $connect, "SELECT * FROM song,singer,genres Where song.SingerID=singer.SingerID and song.GenresID=genres.GenresID and song.SongID = $id" );
     $song = mysqli_fetch_array( $result );

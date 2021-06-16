@@ -123,7 +123,7 @@ img.d-block {
 
 <?php 
 
-require_once("connect.php");
+include("connect.php");
 if ($_SERVER['REQUEST_METHOD']=='POST') {
   $id =$_POST['id'];
   if (empty($_SESSION['cart'][$id])) {
